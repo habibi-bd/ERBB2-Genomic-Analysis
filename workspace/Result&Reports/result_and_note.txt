@@ -1,0 +1,336 @@
+HER2 also widely know as Receptor tyrosine-protein kinase erbB-2
+UniPortID (P04626) https://www.uniprot.org/uniprotkb/P04626/entry
+PubChem GeneID (2064) https://www.ncbi.nlm.nih.gov/gene/2064
+
+
+## DATASET DETAILS
+# ChEMBL 
+activity_class HER2_ChEMBL
+
+active      1953
+inactive    1399
+Name: count, dtype: int64
+
+# PubChem
+Total Unique Active CIDs captured: 4593
+
+==================================================
+
+TANIMOTO SCORE
+Calculated Inter-Dataset Mean Tanimoto Score: 0.1931
+
+==================================================
+
+
+
+==================================================
+
+Tools
+
+https://www.swissdock.ch/results.php?job=18943254
+https://tox.charite.de/protox3/
+==================================================
+
+
+# 2D SMILES string into an AutoDock-ready 3D ligand file:
+Adds Explicit Hydrogens: Attaches all necessary hydrogen atoms required for accurate molecular mechanics and force field docking calculations.
+Builds 3D Conformers: Converts flat 2D connections into physical 3D shapes using distance geometry templates (the ETKDG method).
+Minimizes Structural Energy: Relaxes bond lengths and physical angles using a molecular force field (UFF) to prevent overlapping atoms.
+Identifies Rotatable Bonds: Scans the structure to find flexible single bonds that AutoDock can twist during docking simulations.
+Assigns AutoDock Atom Types: Converts traditional chemical element symbols into specific force field types (like aromatic carbons or polar hydrogens).
+Computes Partial Charges: Calculates and saves Gasteiger-type atomic partial charges required for electrostatic score scoring calculations.
+
+
+
+130275249: -6.20 kcal/mol
+130275835: -6.21 kcal/mol
+130275856: -6.44 kcal/mol
+130275885: -5.98 kcal/mol
+130276342: -6.57 kcal/mol
+130276350: -6.68 kcal/mol
+130276381: -6.13 kcal/mol
+130276411: -6.17 kcal/mol
+130276911: -6.39 kcal/mol
+130276915: -6.35 kcal/mol
+130276918: -5.89 kcal/mol
+130276952: -5.92 kcal/mol
+130277012: -5.76 kcal/mol
+130277015: -5.83 kcal/mol
+130277020: -5.91 kcal/mol
+155755925: -6.35 kcal/mol
+155755958: -5.73 kcal/mol
+155755966: -6.31 kcal/mol
+155755998: -6.35 kcal/mol
+155756034: -6.20 kcal/mol
+
+MACHINE LEARNING MODLEL CONFIG 
+
+==================== CUSTOM HER2 BENCHMARK RESULTS ====================
+
+Model Framework: RF + MACCS
+Optimal Fine-Tuned Hyperparameters: {'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 200}
+Performance -> Accuracy: 0.85 | Sensitivity: 0.90 | Specificity: 0.77 | AUC: 0.92
+
+Model Framework: SVM + MACCS
+Optimal Fine-Tuned Hyperparameters: {'C': 1, 'gamma': 0.1, 'kernel': 'rbf'}
+Performance -> Accuracy: 0.85 | Sensitivity: 0.90 | Specificity: 0.78 | AUC: 0.92
+
+Model Framework: RF + Morgan3
+Optimal Fine-Tuned Hyperparameters: {'criterion': 'entropy', 'max_depth': 30, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 200}
+Performance -> Accuracy: 0.86 | Sensitivity: 0.90 | Specificity: 0.81 | AUC: 0.93
+
+Model Framework: SVM + Morgan3
+Optimal Fine-Tuned Hyperparameters: {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+Performance -> Accuracy: 0.87 | Sensitivity: 0.89 | Specificity: 0.84 | AUC: 0.93
+========================================================================
+
+
+
+================== BENCHMARK PERFORMANCE RESULTS ==================
+      Model Accuracy Sensitivity Specificity  AUC
+SVM-Morgan3     0.60        0.99        0.06 0.58
+  SVM-MACCS     0.85        0.90        0.78 0.91
+   RF-MACCS     0.84        0.89        0.77 0.91
+ RF-Morgan3     0.83        0.91        0.72 0.91
+===================================================================
+
+
+
+
+
+
+Rank,Ligand ID,Docking Score (kcal/mol)
+1,130276350,-6.67
+2,155755998,-6.62
+3,130276342,-6.59
+4,155755966,-6.39
+5,130276915,-6.35
+6,155755925,-6.33
+7,130276911,-6.28
+8,130275856,-6.26
+9,130275835,-6.24
+10,130275249,-6.23
+11,155756034,-6.21
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==================================================
+ 🏆 FINAL RANKING OF MOLECULES (BEST TO WORST)
+==================================================
+⭐ Rank 01 | Molecule ID: 130275856    | Score: -4.91 kcal/mol
+⭐ Rank 02 | Molecule ID: 130276350    | Score: -4.79 kcal/mol
+⭐ Rank 03 | Molecule ID: 130275835    | Score: -4.74 kcal/mol
+   Rank 04 | Molecule ID: 130276911    | Score: -4.74 kcal/mol
+   Rank 05 | Molecule ID: 130276952    | Score: -4.71 kcal/mol
+   Rank 06 | Molecule ID: 130276411    | Score: -4.61 kcal/mol
+   Rank 07 | Molecule ID: 130276915    | Score: -4.56 kcal/mol
+   Rank 08 | Molecule ID: 130277015    | Score: -4.54 kcal/mol
+   Rank 09 | Molecule ID: 155756034    | Score: -4.53 kcal/mol
+   Rank 10 | Molecule ID: 130276381    | Score: -4.50 kcal/mol
+   
+   Rank 11 | Molecule ID: 130275249    | Score: -4.46 kcal/mol
+   Rank 12 | Molecule ID: 155755958    | Score: -4.45 kcal/mol
+   Rank 13 | Molecule ID: 130276342    | Score: -4.44 kcal/mol
+   Rank 14 | Molecule ID: 130276918    | Score: -4.43 kcal/mol
+   Rank 15 | Molecule ID: 130277020    | Score: -4.37 kcal/mol
+   Rank 16 | Molecule ID: 130275885    | Score: -4.36 kcal/mol
+   Rank 17 | Molecule ID: 130277012    | Score: -4.35 kcal/mol
+   Rank 18 | Molecule ID: 155755998    | Score: -4.22 kcal/mol
+   Rank 19 | Molecule ID: 155755925    | Score: -4.20 kcal/mol
+   Rank 20 | Molecule ID: 155755966    | Score: -4.17 kcal/mol
+==================================================
+
+
+
+## COLAB DOCKING LOGS
+
+
+==================================================
+ 🧪 PROCESSING LIGAND ID: 130275249
+==================================================
+[*] Running deep-sampling molecular docking for ID 130275249...
+[*] Performing local energy minimization and gradient optimization...
+ 🏆 OPTIMIZED DOCKING SCORE (130275249): -6.23 kcal/mol
+[*] Final optimized poses written to 'docking_outputs_130275249.pdbqt'
+
+==================================================
+ 🧪 PROCESSING LIGAND ID: 130275835
+==================================================
+[*] Running deep-sampling molecular docking for ID 130275835...
+[*] Performing local energy minimization and gradient optimization...
+ 🏆 OPTIMIZED DOCKING SCORE (130275835): -6.24 kcal/mol
+[*] Final optimized poses written to 'docking_outputs_130275835.pdbqt'
+
+==================================================
+ 🧪 PROCESSING LIGAND ID: 130275856
+==================================================
+[*] Running deep-sampling molecular docking for ID 130275856...
+[*] Performing local energy minimization and gradient optimization...
+ 🏆 OPTIMIZED DOCKING SCORE (130275856): -6.26 kcal/mol
+[*] Final optimized poses written to 'docking_outputs_130275856.pdbqt'
+
+==================================================
+ 🧪 PROCESSING LIGAND ID: 130275885
+==================================================
+[*] Running deep-sampling molecular docking for ID 130275885...
+[*] Performing local energy minimization and gradient optimization...
+ 🏆 OPTIMIZED DOCKING SCORE (130275885): -5.97 kcal/mol
+[*] Final optimized poses written to 'docking_outputs_130275885.pdbqt'
+
+==================================================
+ 🧪 PROCESSING LIGAND ID: 130276342
+==================================================
+[*] Running deep-sampling molecular docking for ID 130276342...
+[*] Performing local energy minimization and gradient optimization...
+ 🏆 OPTIMIZED DOCKING SCORE (130276342): -6.59 kcal/mol
+[*] Final optimized poses written to 'docking_outputs_130276342.pdbqt'
+
+==================================================
+ 🧪 PROCESSING LIGAND ID: 130276350
+==================================================
+[*] Running deep-sampling molecular docking for ID 130276350...
+[*] Performing local energy minimization and gradient optimization...
+ 🏆 OPTIMIZED DOCKING SCORE (130276350): -6.67 kcal/mol
+[*] Final optimized poses written to 'docking_outputs_130276350.pdbqt'
+
+==================================================
+ 🧪 PROCESSING LIGAND ID: 130276381
+==================================================
+[*] Running deep-sampling molecular docking for ID 130276381...
+[*] Performing local energy minimization and gradient optimization...
+ 🏆 OPTIMIZED DOCKING SCORE (130276381): -6.12 kcal/mol
+[*] Final optimized poses written to 'docking_outputs_130276381.pdbqt'
+
+==================================================
+ 🧪 PROCESSING LIGAND ID: 130276411
+==================================================
+[*] Running deep-sampling molecular docking for ID 130276411...
+[*] Performing local energy minimization and gradient optimization...
+ 🏆 OPTIMIZED DOCKING SCORE (130276411): -6.18 kcal/mol
+[*] Final optimized poses written to 'docking_outputs_130276411.pdbqt'
+
+==================================================
+ 🧪 PROCESSING LIGAND ID: 130276911
+==================================================
+[*] Running deep-sampling molecular docking for ID 130276911...
+[*] Performing local energy minimization and gradient optimization...
+ 🏆 OPTIMIZED DOCKING SCORE (130276911): -6.28 kcal/mol
+[*] Final optimized poses written to 'docking_outputs_130276911.pdbqt'
+
+==================================================
+ 🧪 PROCESSING LIGAND ID: 130276915
+==================================================
+[*] Running deep-sampling molecular docking for ID 130276915...
+[*] Performing local energy minimization and gradient optimization...
+ 🏆 OPTIMIZED DOCKING SCORE (130276915): -6.35 kcal/mol
+[*] Final optimized poses written to 'docking_outputs_130276915.pdbqt'
+
+==================================================
+ 🧪 PROCESSING LIGAND ID: 130276918
+==================================================
+[*] Running deep-sampling molecular docking for ID 130276918...
+[*] Performing local energy minimization and gradient optimization...
+ 🏆 OPTIMIZED DOCKING SCORE (130276918): -5.91 kcal/mol
+[*] Final optimized poses written to 'docking_outputs_130276918.pdbqt'
+
+==================================================
+ 🧪 PROCESSING LIGAND ID: 130276952
+==================================================
+[*] Running deep-sampling molecular docking for ID 130276952...
+[*] Performing local energy minimization and gradient optimization...
+ 🏆 OPTIMIZED DOCKING SCORE (130276952): -5.75 kcal/mol
+[*] Final optimized poses written to 'docking_outputs_130276952.pdbqt'
+
+==================================================
+ 🧪 PROCESSING LIGAND ID: 130277012
+==================================================
+[*] Running deep-sampling molecular docking for ID 130277012...
+[*] Performing local energy minimization and gradient optimization...
+ 🏆 OPTIMIZED DOCKING SCORE (130277012): -5.78 kcal/mol
+[*] Final optimized poses written to 'docking_outputs_130277012.pdbqt'
+
+==================================================
+ 🧪 PROCESSING LIGAND ID: 130277015
+==================================================
+[*] Running deep-sampling molecular docking for ID 130277015...
+[*] Performing local energy minimization and gradient optimization...
+ 🏆 OPTIMIZED DOCKING SCORE (130277015): -5.83 kcal/mol
+[*] Final optimized poses written to 'docking_outputs_130277015.pdbqt'
+
+==================================================
+ 🧪 PROCESSING LIGAND ID: 130277020
+==================================================
+[*] Running deep-sampling molecular docking for ID 130277020...
+[*] Performing local energy minimization and gradient optimization...
+ 🏆 OPTIMIZED DOCKING SCORE (130277020): -6.09 kcal/mol
+[*] Final optimized poses written to 'docking_outputs_130277020.pdbqt'
+
+==================================================
+ 🧪 PROCESSING LIGAND ID: 155755925
+==================================================
+[*] Running deep-sampling molecular docking for ID 155755925...
+[*] Performing local energy minimization and gradient optimization...
+ 🏆 OPTIMIZED DOCKING SCORE (155755925): -6.33 kcal/mol
+[*] Final optimized poses written to 'docking_outputs_155755925.pdbqt'
+
+==================================================
+ 🧪 PROCESSING LIGAND ID: 155755958
+==================================================
+[*] Running deep-sampling molecular docking for ID 155755958...
+[*] Performing local energy minimization and gradient optimization...
+ 🏆 OPTIMIZED DOCKING SCORE (155755958): -6.16 kcal/mol
+[*] Final optimized poses written to 'docking_outputs_155755958.pdbqt'
+
+==================================================
+ 🧪 PROCESSING LIGAND ID: 155755966
+==================================================
+[*] Running deep-sampling molecular docking for ID 155755966...
+[*] Performing local energy minimization and gradient optimization...
+ 🏆 OPTIMIZED DOCKING SCORE (155755966): -6.39 kcal/mol
+[*] Final optimized poses written to 'docking_outputs_155755966.pdbqt'
+
+==================================================
+ 🧪 PROCESSING LIGAND ID: 155755998
+==================================================
+[*] Running deep-sampling molecular docking for ID 155755998...
+[*] Performing local energy minimization and gradient optimization...
+ 🏆 OPTIMIZED DOCKING SCORE (155755998): -6.62 kcal/mol
+[*] Final optimized poses written to 'docking_outputs_155755998.pdbqt'
+
+==================================================
+ 🧪 PROCESSING LIGAND ID: 155756034
+==================================================
+[*] Running deep-sampling molecular docking for ID 155756034...
+[*] Performing local energy minimization and gradient optimization...
+ 🏆 OPTIMIZED DOCKING SCORE (155756034): -6.21 kcal/mol
+[*] Final optimized poses written to 'docking_outputs_155756034.pdbqt'
+
+[✓] All docking simulations completed successfully!
+

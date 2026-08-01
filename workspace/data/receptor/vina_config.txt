@@ -1,0 +1,19 @@
+# AutoDock Vina Grid Box Configuration File
+# Target: ERBB2 / HER2 Kinase Domain (PDB: 3RCD)
+
+receptor = protein/3RCD_prepared.pdbqt
+
+# Active site coordinates (Centered on the hinge region/binding pocket)
+center_x = 13.52
+center_y = 28.14
+center_z = 9.68
+
+# Search space dimensions (Angstroms)
+size_x = 24.0
+size_y = 24.0
+size_z = 24.0
+
+# Search exhaustiveness parameters
+exhaustiveness = 8
+num_modes = 9
+energy_range = 3.0

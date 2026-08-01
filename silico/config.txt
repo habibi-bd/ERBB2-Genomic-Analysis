@@ -1,0 +1,19 @@
+# AutoDock Vina Configuration File for Bcl-2 (PDB: 6O0K)
+
+# 1. Structural Inputs
+receptor = protein_receptor.pdbqt
+
+# 2. Search Space Dimensions (Centered precisely on Venetoclax pocket)
+center_x = -17.4
+center_y = 7.3
+center_z = -18.2
+
+# 3. Grid Box Size (Angstroms - large enough to let your ligands rotate freely)
+size_x = 22.0
+size_y = 22.0
+size_z = 22.0
+
+# 4. Simulation Parameters
+exhaustiveness = 8     # Default thoroughness of the global search space
+num_modes = 9          # Max number of binding poses to save
+energy_range = 3       # Max energy difference (kcal/mol) between top and bottom poses

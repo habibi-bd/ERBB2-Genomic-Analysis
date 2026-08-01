@@ -1,0 +1,18 @@
+@@ Machine Learning Pipeline @@
+
+#Data Prep: Cleans a molecular dataset by removing columns with high missing rates 
+(greater than 20 percent), 
+filtering out corrupt entries, and targeting rows with complete target data (ck_swis)
+
+#Chemical Standardization: Uses RDKit to clean chemical structures (SMILES) by stripping salts, normalizing bonds,
+ and neutralizing charges into standard canonical forms.
+
+
+#Feature Engineering: Generates hundreds of 1D/2D molecular properties using Mordred, filters out highly redundant features (correlation greater than 0.90),
+and normalizes data scales.
+
+#Model Benchmarking: Trains and compares 28 different machine learning models (ranging from simple Linear/Tree models to XGBoost and Neural Networks)
+using 5-fold Stratified Cross-Validation and a 20 percent holdout test set.
+
+#Evaluation: Outputs a comprehensive comparison matrix tracking AUC, Accuracy, Sensitivity, Specificity, F1-Score,
+and MCC to identify the best-performing predictive model for the target variable (VERIFY).

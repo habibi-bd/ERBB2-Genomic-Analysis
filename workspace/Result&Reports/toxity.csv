@@ -1,0 +1,12 @@
+RANK (DOCKING SCORE),CID,Predicted Toxicity Class,LD₅₀ (mg/kg) ,logP ,Molweight,Hepatotoxicity,Neurotoxicity,Nephrotoxicity,Respiratory toxicity,Cardiotoxicity
+2,130276342,4,1000,3.19,525,inactive_0.57,active_0.82,inactive_0.62,active_0.93,inactive_086
+5,130276915,4,1000,3.03,528.97,inactive_0.54,active_0.86,inactive_0.65,active_0.94,inactive_0.86
+6,155755925,5,5000,5.29,499.54,inactive_0.54,active_0.84,inactive_0.61,active_0.92,inactive_0.84
+9,130275835,4,1000,2.9,541,inactive_0.52,active_0.81,inactive_0.55,active_0.91,inactive_0.83
+1,130276350,4,1000,2.6,517.54,inactive_0.52,,active_0.69,active_0.89,inactive_0.8
+3,130275856,4,1600,2.85,504.58,inactive_0.67,active_0.75,inactive_0.65,active_0.93,active_0.87
+4,130276911,4,629,2.68,508.55,inactive_0.54,active_0.82,inactive_0.65,active_0.92,inactive_0.86
+10,130275249,4,1190,6,371.52,inactive_0.54,active_0.82,inactive_0.65,active_0.92,inactive_0.86
+11,155756034,5,5000,5.29,499.54,inactive_0.54,active_0.84,inactive_0.61,active_0.92,inactive_0.84
+8,155755966,4,1000,5.46,495.57,inactive_0.66,active_0.78,inactive_0.69,active_0.91,inactive_0.91
+7,155755998,5,5000,5.07,513,inactive_0.54,active_0.84,inactive_0.61,active_0.92,inactive_0.84
